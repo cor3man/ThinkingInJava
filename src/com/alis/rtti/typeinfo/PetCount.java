@@ -44,6 +44,8 @@ public class PetCount {
 				counter.count("Mouse");
 			if (pet instanceof Hamster)
 				counter.count("Hamster");
+			if (pet instanceof Gerbil)
+				counter.count("Gerbil");
 		}
 		// Вывод результатов подсчета.
 		System.out.println();

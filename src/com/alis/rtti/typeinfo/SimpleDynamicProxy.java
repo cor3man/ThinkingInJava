@@ -22,9 +22,9 @@ class DynamicProxyHandler implements InvocationHandler {
 
 class SimpleDynamicProxy {
 
-	public static void consumer(Interface ³face) {
-		³face.doSomething();
-		³face.somethingElse("bonobo");
+	public static void consumer(Interface iface) {
+		iface.doSomething();
+		iface.somethingElse("bonobo");
 	}
 
 	public static void main(String[] args) {

@@ -13,7 +13,7 @@ public class LiteralPetCreator extends PetCreator {
 																							// "read-only"
 																							// коллекцию
 			Arrays.asList(Pet.class, Dog.class, Cat.class, Rodent.class, Mutt.class, Pug.class, EgyptianMau.class,
-					Manx.class, Cymric.class, Rat.class, Mouse.class, Hamster.class)); // Типы
+					Manx.class, Cymric.class, Rat.class, Mouse.class, Hamster.class, Gerbil.class)); // Типы
 																						// для
 																						// случайного
 																						// создания:
