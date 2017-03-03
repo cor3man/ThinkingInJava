@@ -15,7 +15,6 @@ class DynamicProxyHandler implements InvocationHandler {
 		if (args != null)
 			for (Object arg : args)
 				System.out.println(" " + arg);
-
 		return method.invoke(proxied, args);
 	}
 }

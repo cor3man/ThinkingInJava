@@ -1,7 +1,10 @@
 eclipse.preferences.version=1
 encoding//src/com/alis/rtti/ToyTest.java=UTF-8
+encoding//src/com/alis/rtti/typeinfo/Person.java=UTF-8
 encoding//src/com/alis/rtti/typeinfo/PetCount.java=UTF-8
 encoding//src/com/alis/rtti/typeinfo/PetCount3.java=UTF-8
+encoding//src/com/alis/rtti/typeinfo/Robot.java=UTF-8
+encoding//src/com/alis/rtti/typeinfo/SnowRemovalRobot.java=UTF-8
 encoding//src/com/alis/rtti/typeinfo/pets/FabricPatCreater.java=UTF-8
 encoding//src/com/alis/rtti/typeinfo/pets/ForNameCreator.java=UTF-8
 encoding//src/com/alis/rtti/typeinfo/pets/LiteralPetCreator.java=UTF-8
