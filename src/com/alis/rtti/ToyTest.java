@@ -1,4 +1,8 @@
 package com.alis.rtti;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+
 //: typeinfo/toys/ToyTest.java
 //Testing class Class.
 
@@ -18,10 +22,12 @@ class Toy {
 	// Закомментируйте следующий далее конструктор по
 	// умолчанию, тогда в строке с пометкой (*1*)
 	// возникнет ошибка NoSuchMethodError
+	public int i;
 	Toy() {
 	}
 
 	Toy(int i) {
+		this.i = i;
 	}
 }
 
@@ -38,6 +44,7 @@ public class ToyTest {
 		System.out.println("Каноническое имя: " + cc.getCanonicalName());
 	}
 
+	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
 		Class c = null;
 		try {
@@ -51,6 +58,26 @@ public class ToyTest {
 			printInfo(face);
 		Class up = c.getSuperclass();
 		Object obj = null;
+		
+		try {
+			Constructor<?> constructor;// = up.getConstructor(int.class);
+			constructor = up.getDeclaredConstructor(int.class);
+			constructor.setAccessible(true);
+			try {
+				obj = constructor.newInstance(35);
+				System.out.println(((Toy)obj).i);
+			} catch (InstantiationException | IllegalAccessException | IllegalArgumentException
+					| InvocationTargetException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} catch (NoSuchMethodException | SecurityException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+		
+		
 		try {
 			// Необходим конструктор по умолчанию:
 			obj = up.newInstance();
