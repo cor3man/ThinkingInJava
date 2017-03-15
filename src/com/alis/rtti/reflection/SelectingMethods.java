@@ -10,7 +10,7 @@ class MethodSelector implements InvocationHandler {
 	}
 
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-		if (method.getName().equals("interesting"))
+		if ((method.getName().equals("interesting"))||(args != null))
 			System.out.println("Proxy detected the interesting method");
 		return method.invoke(proxied, args);
 	}
@@ -19,7 +19,7 @@ class MethodSelector implements InvocationHandler {
 interface SomeMethods {
 	void boring1();
 
-	void boring2();
+	void boring2(String arg);
 
 	void interesting(String arg);
 
@@ -31,7 +31,7 @@ class Implementation implements SomeMethods {
 		System.out.println("boring1");
 	}
 
-	public void boring2() {
+	public void boring2(String arg) {
 		System.out.println("boring2");
 	}
 
@@ -49,7 +49,7 @@ class SelectingMethods {
 		SomeMethods proxy = (SomeMethods) Proxy.newProxyInstance(SomeMethods.class.getClassLoader(),
 				new Class[] { SomeMethods.class }, new MethodSelector(new Implementation()));
 		proxy.boring1();
-		proxy.boring2();
+		proxy.boring2("bonobo");
 		proxy.interesting("bonobo");
 		proxy.boring3();
 	}
