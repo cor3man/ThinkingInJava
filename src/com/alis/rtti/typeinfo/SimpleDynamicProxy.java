@@ -23,7 +23,6 @@ class DynamicProxyHandler implements InvocationHandler {
 		System.out.println("Invocation time is " + sdf.format(cal.getTime()));
 		System.out.println(System.nanoTime());
 		//System.out.println(proxy.toString());
-
 		return method.invoke(proxied, args);
 	}
 }
