@@ -1,3 +1,4 @@
+
 package com.alis.rtti.typeinfo;
 
 import java.lang.reflect.*;
