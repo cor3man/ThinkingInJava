@@ -1,5 +1,7 @@
 eclipse.preferences.version=1
+encoding//src/com/alis/generics/LinkedStack.java=UTF-8
 encoding//src/com/alis/rtti/ToyTest.java=UTF-8
+encoding//src/com/alis/rtti/typeinfo/InterfaceViolation.java=UTF-8
 encoding//src/com/alis/rtti/typeinfo/Person.java=UTF-8
 encoding//src/com/alis/rtti/typeinfo/PetCount.java=UTF-8
 encoding//src/com/alis/rtti/typeinfo/PetCount3.java=UTF-8
