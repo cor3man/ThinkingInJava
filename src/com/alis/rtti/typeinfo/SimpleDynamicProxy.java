@@ -18,13 +18,11 @@ class DynamicProxyHandler implements InvocationHandler {
 		if (args != null)
 			for (Object arg : args)
 				System.out.println(" " + arg);
-<<<<<<< HEAD
-=======
 		cal = Calendar.getInstance();
 		System.out.println("Invocation time is " + sdf.format(cal.getTime()));
 		System.out.println(System.nanoTime());
 		//System.out.println(proxy.toString());
->>>>>>> home/generics
+
 		return method.invoke(proxied, args);
 	}
 }
