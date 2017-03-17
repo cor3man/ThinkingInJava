@@ -1,5 +1,7 @@
 eclipse.preferences.version=1
 encoding//src/com/alis/generics/LinkedStack.java=UTF-8
+encoding//src/com/alis/interfaces/Factories.java=UTF-8
+encoding//src/com/alis/interfaces/NestingInterfaces.java=UTF-8
 encoding//src/com/alis/interfaces/classprocessor/Apply.java=UTF-8
 encoding//src/com/alis/interfaces/filters/LowPass.java=UTF-8
 encoding//src/com/alis/rtti/ToyTest.java=UTF-8
