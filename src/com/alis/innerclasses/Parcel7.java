@@ -1,6 +1,10 @@
 package com.alis.innerclasses;
 
-public class Parcel7 {
+interface S<T> {
+	
+}
+
+public class Parcel7 implements S<Integer>{
 	public Contents contents() {
 		return new Contents() {// Вставить определение класса
 			private int i = 11;
