@@ -1,10 +1,12 @@
 package com.alis.innerclasses;
 
 public class Parcel3 {
+	int i;
 	class Contents {
 		private int i = 11;
 
 		public int value() {
+			Parcel3.this.i = i*2;
 			return i;
 		}
 	}
@@ -27,5 +29,6 @@ public class Parcel3 {
 		// необходимо использовать экземпляр внешнего класса
 		Parcel3.Contents c = p.new Contents();
 		Parcel3.Destination d = p.new Destination("Tasmania");
+		System.out.println(c.value() + " " + p.i);
 	}
 }

@@ -1,3 +1,4 @@
+
 package com.alis.innerclasses;
 
 interface S<T> {
@@ -20,3 +21,4 @@ public class Parcel7 implements S<Integer>{
 		Contents c = p.contents();
 	}
 }
+

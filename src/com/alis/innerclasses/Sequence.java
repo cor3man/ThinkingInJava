@@ -60,6 +60,28 @@ public class Sequence extends Test{
 		}
 	}
 
+	private class ReversseSelector implements Selector {
+		private int i = items.length - 1;
+		@Override
+		public boolean end() {
+			return i == -1;
+		}
+
+		@Override
+		public Object current() {
+			return items[i];
+		}
+
+		@Override
+		public void next() {
+			if( i >=0 ) i--;
+		}
+		
+	}
+	public Selector reverseSelector() {
+		return new ReversseSelector();
+	}
+	
 	public Selector selector() {
 		return new SequenceSelector();
 	}
@@ -73,5 +95,12 @@ public class Sequence extends Test{
 			System.out.print(selector.current() + " ");
 			selector.next();
 		}
+		System.out.println();
+		Selector rSelector = sequence.reverseSelector();
+		while (!rSelector.end()) {
+			System.out.print(rSelector.current() + " ");
+			rSelector.next();
+		}
+		
 	}
 }
