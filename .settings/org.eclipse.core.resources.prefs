@@ -1,10 +1,16 @@
 eclipse.preferences.version=1
 encoding//src/com/alis/generics/LinkedStack.java=UTF-8
+encoding//src/com/alis/innerclasses/GreenhouseController.java=UTF-8
+encoding//src/com/alis/innerclasses/GreenhouseControls.java=UTF-8
+encoding//src/com/alis/innerclasses/InheritInner.java=UTF-8
+encoding//src/com/alis/innerclasses/LocalInnerClass.java=UTF-8
 encoding//src/com/alis/innerclasses/Parcel1.java=UTF-8
 encoding//src/com/alis/innerclasses/Parcel3.java=UTF-8
 encoding//src/com/alis/innerclasses/Parcel6.java=UTF-8
 encoding//src/com/alis/innerclasses/Parcel7.java=UTF-8
 encoding//src/com/alis/innerclasses/TestParcel.java=UTF-8
+encoding//src/com/alis/innerclasses/controller/Controller.java=UTF-8
+encoding//src/com/alis/innerclasses/controller/Event.java=UTF-8
 encoding//src/com/alis/interfaces/Factories.java=UTF-8
 encoding//src/com/alis/interfaces/NestingInterfaces.java=UTF-8
 encoding//src/com/alis/interfaces/classprocessor/Apply.java=UTF-8
